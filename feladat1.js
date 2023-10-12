@@ -8,4 +8,7 @@ class Szemely {
     teljesnev(){
         return "${this.csaladinev} ${this.keresztnev}";
     }
+    eletkor(){
+        return "${this.eletkor}"
+    }
 }
