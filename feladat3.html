@@ -6,12 +6,16 @@
     <title>Ecsedi JS OOP feladat 3</title>
     <script src="feladat3.js"></script>
     <script>
-        const nev=document.getElementById("nev").value;
-        const ar=document.getElementById("ar").value;
-        const kategoria=document.getElementById("kategoria").value;
-        const osszetevok=document.getElementById("osszetevok").value;
-        const ujEtel= new Food(nev,ar,kategoria,osszetevok);
         const lista = [];
+
+        function Bekuld(){
+            const nev=document.getElementById("nev").value;
+            const ar=document.getElementById("ar").value;
+            const kategoria=document.getElementById("kategoria").value;
+            const osszetevok=document.getElementById("osszetevok").value;
+            const ujEtel= new Food(nev,ar,kategoria,osszetevok);
+            lista.push(ujEtel);
+        }
     </script>
 </head>
 <body>
@@ -23,5 +27,7 @@
     <input type="text" id="kategoria">
     <label for="osszetevok">Összetevők:</label>
     <input type="text" id="osszetevok">
+
+    <ul id="kiiratas"></ul>
 </body>
 </html>
