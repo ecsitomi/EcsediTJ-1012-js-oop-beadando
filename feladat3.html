@@ -6,10 +6,22 @@
     <title>Ecsedi JS OOP feladat 3</title>
     <script src="feladat3.js"></script>
     <script>
-        
+        const nev=document.getElementById("nev").value;
+        const ar=document.getElementById("ar").value;
+        const kategoria=document.getElementById("kategoria").value;
+        const osszetevok=document.getElementById("osszetevok").value;
+        const ujEtel= new Food(nev,ar,kategoria,osszetevok);
+        const lista = [];
     </script>
 </head>
 <body>
-    
+    <label for="nev">Név:</label>
+    <input type="text" id="nev">
+    <label for="ar">Ár:</label>
+    <input type="text" id="ar">
+    <label for="kategoria">Kategoria:</label>
+    <input type="text" id="kategoria">
+    <label for="osszetevok">Összetevők:</label>
+    <input type="text" id="osszetevok">
 </body>
 </html>
