@@ -1,14 +1,20 @@
 class Szemely {
-    constructor(csaladinev,keresztnev,eletkor,hobby){
+    constructor(csaladinev,keresztnev,eves,hobby){
         this.csaladinev=csaladinev;
         this.keresztnev=keresztnev;
-        this.eletkor=eletkor;
+        this.eves=eves;
         this.hobby=hobby;
     }
     teljesnev(){
-        return "${this.csaladinev} ${this.keresztnev}";
+        return `${this.csaladinev} ${this.keresztnev}`;
     }
     eletkor(){
-        return "${this.eletkor}"
+        return `${this.eletkor}`;
+    }
+    getHobby(){
+        return `${this.hobby}`;
+    }
+    setHobby(newHobby){
+        this.hobby=newHobby;
     }
 }
